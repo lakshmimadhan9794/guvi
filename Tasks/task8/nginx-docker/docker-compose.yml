@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: lakshmisri/custom-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /var/opt/nginx:/usr/share/nginx/html
+
+
+
